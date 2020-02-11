@@ -2,9 +2,9 @@
 Airflow tries and attempts
 
 ToDo:
--airflow.cfg && airflow_home after start
--xCom 
--jinja
+airflow.cfg && airflow_home after start
+xCom 
+jinja
 ---------------------------------
 links 
 https://habr.com/ru/company/ivi/blog/456630/ - detailed install
