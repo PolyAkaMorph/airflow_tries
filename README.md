@@ -9,21 +9,16 @@ https:#docs.microsoft.com/ru-ru/virtualization/hyper-v-on-windows/quick-start/en
 https:#docs.docker.com/docker-for-windows/install/ - docker install
 ---------------------------------
 requirements: win 10, at least 4 gb ram, 64 bit cpu and internet required
-
 enable hyper-v (link above)
 virtualization must be enabled - check it in task manager\performance\cpu (if not -  activate it in bios)
-
 install docker (link above)
 use linux containers
-
-start win power shell (it was not working from first time, probably some internet lag) - this uploads ubuntu image 
-
+---------------------------------
+#start win power shell (it was not working from first time, probably some internet lag) - this uploads ubuntu image 
 docker pull ubuntu
 
 #create and run docker, open bash, open and map port 8080 to it
-
 docker run -it -p 8080:8080 --name test ubuntu:latest bash
-
 #or check existing ones with
 docker ps -a
 #and run it
