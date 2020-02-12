@@ -2,10 +2,11 @@
 Airflow tries and attempts
 
 Files:
-howTo.txt - definition of install process
 
-task.json - prepared json with tasks and dependencies
+-howTo.txt - definition of install process
 
-run.py - python script for dynamic task generation from task.json
+-task.json - prepared json with tasks and dependencies
 
-variables.json - exported Airflow variables
+-run.py - python script for dynamic task generation from task.json
+
+-variables.json - exported Airflow variables
