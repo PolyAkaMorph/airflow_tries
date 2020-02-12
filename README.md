@@ -8,11 +8,11 @@ habr.com/ru/company/mailru/blog/344398/ - jinja, hql-sql
 docs.microsoft.com/ru-ru/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v - enable hyper-v
 docs.docker.com/docker-for-windows/install/ - docker install
 
-_requirements: win 10, at least 4 gb ram, 64 bit cpu and internet required
+//requirements: win 10, at least 4 gb ram, 64 bit cpu and internet required
 enable hyper-v (link above)
 virtualization must be enabled - check it in task manager\performance\cpu (if not -  activate it in bios)
 install docker (link above)
-use linux containers_
+use linux containers
 
 _start win power shell (it was not working from first time, probably some internet lag) - this uploads ubuntu image_
 docker pull ubuntu
