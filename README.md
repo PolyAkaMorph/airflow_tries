@@ -19,8 +19,11 @@ use linux containers
 start win power shell (it was not working from first time, probably some internet lag) - this uploads ubuntu image 
 
 docker pull ubuntu
+
 #create and run docker, open bash, open and map port 8080 to it
+
 docker run -it -p 8080:8080 --name test ubuntu:latest bash
+
 #or check existing ones with
 docker ps -a
 #and run it
