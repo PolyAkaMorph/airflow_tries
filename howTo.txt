@@ -48,7 +48,7 @@ docker run -d -p 8080:8080 -e LOAD_EX=y puckel/docker-airflow
 mkdir /root/airflow/dags
 //set in ubuntu's shell variables:
 //set env var airflow_home
-export AIRFLOW_HOME=~/airflow
+export AIRFLOW_HOME=/root/airflow
 //set airflow var json_home
 airflow variables -s json_home $AIRFLOW_HOME/dags/task.json
 
