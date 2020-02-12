@@ -9,6 +9,7 @@ from airflow.models import DAG
 default_args = {'owner': 'airflow',
                 'start_date': datetime(2020, 1, 1)
                 }
+
 # this will be executed as dag
 dag = DAG(
     dag_id='test_task',
@@ -16,11 +17,14 @@ dag = DAG(
     schedule_interval='0 0 * * *',
     tags=['Task with bash and python operators']
 )
+
 #function for PythonOperator (must be dynamic? have no solution for generating callable from string)
 def meow():
     print("python meow")
-# dictionary with tasks
+    
+# dictionary for tasks
 taskMap = {}
+
 # open json - path is in Airflow variable
 with open(Variable.get("json_home"), "r") as read_file:
     data = json.load(read_file)
