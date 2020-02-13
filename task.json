@@ -1,0 +1,38 @@
+{
+  "DagNodes": {
+    "taskA": {
+      "taskName": "taskA",
+      "trigger_rule": "all_success",
+      "command": "some_command"
+    },
+    "taskB": {
+      "taskName": "taskB",
+      "trigger_rule": "all_success",
+      "command": "some_command2"
+    },
+    "taskC": {
+      "taskName": "taskC",
+      "trigger_rule": "all_success",
+      "command": "some_command3"
+    },
+    "taskD": {
+      "taskName": "taskD",
+      "trigger_rule": "all_success",
+      "command": "some_command4"
+    }
+  },
+  "DagEdges": {
+    "taskA": [
+      "taskB",
+      "taskC",
+      "taskD"
+    ],
+    "taskB": [
+      "taskD"
+    ],
+    "taskC": [
+      "taskD"
+    ],
+    "taskD": []
+  }
+}
